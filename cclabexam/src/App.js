@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // Import React library if not already imported
 
 function App() {
+  const appStyle = {
+    backgroundColor: 'black',  // Set background color of the entire screen to black
+    height: '100vh',           // Set height to 100% of viewport height
+    display: 'flex',           // Use flexbox for centering content vertically
+    justifyContent: 'center',  // Center content horizontally
+    alignItems: 'center'       // Center content vertically
+  };
+
+  const textStyle = {
+    fontSize: '36px',          // Set font size to 36 pixels
+    color: 'white'             // Set font color to white
+  };
+
   return (
-    <div className="App">
+    <div className="App" style={appStyle}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p style={textStyle}>
+          Hello, I am Ekta.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
